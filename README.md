@@ -1,5 +1,6 @@
 > Helper and Wrapper for Node.js cluster API
 
+> Heavily inspired by [strong-cluster-control](https://github.com/strongloop/strong-cluster-control)
 
 ## Install
 
