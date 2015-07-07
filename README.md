@@ -45,7 +45,7 @@ oniyiClusterControl.start({
 ### setSize(number)
 
 ### shutdownById(number)
-*provided will be resolved to worker by `cluster.workers[id]` and forwarded to `shutdown(worker)`* 
+*`number` provided will be resolved to worker by `cluster.workers[id]` and forwarded to `shutdown(worker)`* 
 
 ### shutdown(worker)
 
