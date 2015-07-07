@@ -1,5 +1,3 @@
-#  [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-
 > Helper and Wrapper for Node.js cluster API
 
 
