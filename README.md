@@ -26,39 +26,40 @@ oniyiClusterControl.start({
 
 ## Events
 
-start
-stop
-set-size
-resize
-worker-start
-worker-stop
-shutdown
-terminate
-restart
-start-restart
-fork
-error
+- start
+- stop
+- set-size
+- resize
+- worker-start
+- worker-stop
+- shutdown
+- terminate
+- restart
+- start-restart
+- fork
+- error
 
 ## API
 
-status
-setSize(number)
-shutdownById(number) (worker.id)
-shutdown(worker)
-terminate(id, worker) (if worker is not defined, tries to resolve id to a running worker)
-restart
-start
-stop
+### status()
+
+### setSize(number)
+
+### shutdownById(number)
+*provided will be resolved to worker by `cluster.workers[id]` and forwarded to `shutdown(worker)`* 
+
+### shutdown(worker)
+
+### terminate(id, worker)
+*if worker is not defined, tries to resolve id to a running worker*
+
+### restart()
+
+### start(options)
+
+### stop()
 
 
 ## License
 
 MIT © [Benjamin Kroeger]()
-
-
-[npm-image]: https://badge.fury.io/js/oniyi-cluster-control.svg
-[npm-url]: https://npmjs.org/package/oniyi-cluster-control
-[travis-image]: https://travis-ci.org/benkroeger/oniyi-cluster-control.svg?branch=master
-[travis-url]: https://travis-ci.org/benkroeger/oniyi-cluster-control
-[daviddm-image]: https://david-dm.org/benkroeger/oniyi-cluster-control.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/benkroeger/oniyi-cluster-control
