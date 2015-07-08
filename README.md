@@ -29,12 +29,12 @@ oniyiClusterControl.start({
 - stop
 - set-size
 - resize
-- worker-start
-- worker-stop
+- start-worker
+- stop-worker
 - shutdown
 - terminate
-- restart
 - start-restart
+- restart
 - fork
 - error
 
