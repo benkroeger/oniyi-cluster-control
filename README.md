@@ -1,6 +1,6 @@
-> Helper and Wrapper for Node.js cluster API
+> Helper and Wrapper for Node.js cluster API, heavily inspired by [strong-cluster-control](https://github.com/strongloop/strong-cluster-control)
 
-> Heavily inspired by [strong-cluster-control](https://github.com/strongloop/strong-cluster-control)
+Main difference to strong-cluster-control is the order in which events are emitted. E.g. the `start` event is emitted after the first `resize` (which is triggered by the `start` command) instead of directly on execution of the `start` command.
 
 ## Install
 
@@ -58,6 +58,9 @@ oniyiClusterControl.start({
 
 ### stop()
 
+
+## Logging
+This package uses a labeled [oniyi-logger](https://www.npmjs.com/package/oniyi-logger) and produces a lot of DEBUG log entries. Since this package wouldn't be used from within a worker (actual application runtime) but in the cluster master instead, the possible performance overhead for logging is considered negligible.
 
 ## License
 

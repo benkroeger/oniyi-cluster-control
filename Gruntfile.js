@@ -18,7 +18,7 @@ module.exports = function (grunt) {
         src: ['*.js']
       },
       test: {
-        src: ['test/**/*.js']
+        src: ['test/**/*.spec.js']
       }
     },
     mochacli: {
@@ -26,7 +26,7 @@ module.exports = function (grunt) {
         reporter: 'nyan',
         bail: true
       },
-      all: ['test/*.js']
+      all: ['test/*.spec.js']
     },
     watch: {
       gruntfile: {

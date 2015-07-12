@@ -3,7 +3,7 @@ var cluster = require('cluster');
 var clusterController = require('../');
 
 cluster.setupMaster({
-  exec: path.join(__dirname, 'experiments-worker.js'),
+  exec: path.join(__dirname, 'worker.js'),
   silent: true
 });
 

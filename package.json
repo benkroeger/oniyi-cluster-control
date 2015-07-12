@@ -9,7 +9,8 @@
   "repository": "benkroeger/oniyi-cluster-control",
   "license": "MIT",
   "files": [
-    "index.js"
+    "index.js",
+    "lib"
   ],
   "keywords": [
     "oniyi-cluster-control",
