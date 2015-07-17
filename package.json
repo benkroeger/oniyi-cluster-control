@@ -20,7 +20,7 @@
   ],
   "dependencies": {
     "lodash": "^3.10.0",
-    "oniyi-logger": "0.0.2"
+    "oniyi-logger": "0.1.0"
   },
   "devDependencies": {
     "grunt-cli": "^0.1.13",
