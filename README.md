@@ -60,7 +60,8 @@ oniyiClusterControl.start({
 
 
 ## Logging
-This package uses a labeled [oniyi-logger](https://www.npmjs.com/package/oniyi-logger) and produces a lot of DEBUG log entries. Since this package wouldn't be used from within a worker (actual application runtime) but in the cluster master instead, the possible performance overhead for logging is considered negligible.
+This package uses a simple labled ("DEBUG [oniyi-cluster-control]") wrapper around `console.log`. To enable debugging, set the `NODE_DEBUG` variable to contain the word "oniyi-cluster-control".  
+`NODE_DEBUG=oniyi-cluster-control node app.js`
 
 ## License
 
