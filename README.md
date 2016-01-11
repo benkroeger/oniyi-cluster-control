@@ -1,3 +1,6 @@
+# Deprecation Notice
+This module is no longer maintained - since a lot of the work was experimentally and is now redundant with [strong-cluster-control](https://github.com/strongloop/strong-cluster-control), it became obsolete
+
 > Helper and Wrapper for Node.js cluster API, heavily inspired by [strong-cluster-control](https://github.com/strongloop/strong-cluster-control)
 
 Main difference to strong-cluster-control is the order in which events are emitted. E.g. the `start` event is emitted after the first `resize` (which is triggered by the `start` command) instead of directly on execution of the `start` command.
